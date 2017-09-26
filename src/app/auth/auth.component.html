@@ -1,0 +1,62 @@
+<section>
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+      <div class="card text-white bg-dark mb-3">
+        <div class="card-header">Sign-Up</div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputPassword1">Date Of Birth</label>
+                  <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+              <button type="submit" class="btn btn-primary btn-block" (click)="signUp()">Sign-Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    <div class="col">
+      <div class="card bg-light mb-3">
+        <div class="card-header">Sign-In</div>
+          <div class="card-body">
+            <!--<h4 class="card-title">Light card title</h4>-->
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" (click)="signIn()">Sign-In</button>
+              </form>
+              <hr width=100% align="left" size=10>
+              <button type="submit" class="btn btn-primary btn-block" (click)="facebookAuth()">Facebook</button>
+              <button type="submit" class="btn btn-danger btn-block" (click)="googleAuth()">Google+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>

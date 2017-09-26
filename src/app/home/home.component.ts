@@ -1,7 +1,9 @@
+import { GlobalService } from './../global.service';
 import { Component, OnInit } from '@angular/core';
 import 'rxjs/add/operator/switchMap';
 import { Observable } from 'rxjs/Observable';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+
 
 @Component({
   templateUrl: './home.component.html',
@@ -9,9 +11,10 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private globalService :GlobalService) { 
+  }
   ngOnInit() {
+
   }
 
 }

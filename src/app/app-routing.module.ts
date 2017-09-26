@@ -1,8 +1,13 @@
+import { HomeComponent } from './home/home.component';
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-  { path: '**',   redirectTo: '/home', pathMatch: 'full' }
+  { path: 'home',   loadChildren: 'app/home/home.module#HomeModule', },
+  //{ path: 'crisis-center', component: CrisisListComponent },
+  { path: '',   redirectTo: '/auth', pathMatch: 'full' },
+  //if not match any paths will go to **  
+  //{ path: '**',   redirectTo: '/auth', pathMatch: 'full' }
 ];
 
 @NgModule({
