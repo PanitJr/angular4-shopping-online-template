@@ -6,6 +6,8 @@ import { HomeAboutUsComponent } from './home-about-us/home-about-us.component';
 import { HomeNewsComponent } from './home-news/home-news.component';
 import { HomeAboutHoneyComponent } from './home-about-honey/home-about-honey.component';
 import { HomeContactUsComponent } from './home-contact-us/home-contact-us.component';
+import { HomeQuotationComponent } from './home-quotation/home-quotation.component';
+import { HomeOpenfarmComponent } from './home-openfarm/home-openfarm.component';
 import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 import { FormsModule }    from '@angular/forms';
@@ -19,6 +21,7 @@ import { HomeRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     HomeRoutingModule
+    
   ],
   declarations: [
     HomeComponent,
@@ -29,7 +32,9 @@ import { HomeRoutingModule } from './home-routing.module';
     HomeAboutUsComponent,
     HomeNewsComponent,
     HomeAboutHoneyComponent,
-    HomeContactUsComponent
+    HomeContactUsComponent,
+    HomeQuotationComponent,
+    HomeOpenfarmComponent
   ],
   providers: [ ]
 })

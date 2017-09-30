@@ -1,0 +1,14 @@
+#carouselIndicators{
+    width: 100%;
+    height: 700px;
+}
+div.carousel-item > img{
+    width: 100%;
+    height: 700px;
+}
+div.carousel-caption> h3{
+    color: black
+}
+div.carousel-caption> p{
+    color: black
+}

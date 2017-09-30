@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { GlobalService } from './global.service';
 
 
+
 @NgModule({
   declarations: [
     AppComponent

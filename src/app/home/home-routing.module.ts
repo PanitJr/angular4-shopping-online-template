@@ -5,6 +5,8 @@ import { HomeAboutUsComponent } from './home-about-us/home-about-us.component';
 import { HomeNewsComponent } from './home-news/home-news.component';
 import { HomeAboutHoneyComponent } from './home-about-honey/home-about-honey.component';
 import { HomeContactUsComponent } from './home-contact-us/home-contact-us.component';
+import { HomeQuotationComponent } from './home-quotation/home-quotation.component';
+import { HomeOpenfarmComponent } from './home-openfarm/home-openfarm.component';
 
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -24,6 +26,8 @@ const homeRoutes: Routes = [
         { path: 'about-honey', component: HomeAboutHoneyComponent },
         { path: 'news-update', component: HomeNewsComponent },
         { path: 'contact-us', component: HomeContactUsComponent },
+        { path: 'quotatuon', component: HomeQuotationComponent },
+        { path: 'open-farm', component: HomeOpenfarmComponent },
         { path: '', component: HomeDashboardComponent }
       ]
     }
